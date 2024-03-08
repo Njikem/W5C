@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+body a{
+    text-decoration: none;
+}
+
+#main-header{
+   min-height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.logs{
+    justify-self: start;
+    margin-left: 30px;
+}
+
+.navs{
+    justify-self: end;
+    margin-right: 30px;
+}
+
+
+#blazer{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+ 
+
+#blazer .blaz h5{
+    font-weight: 800;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+.blaz .leg{
+    margin-bottom: 5px;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 500;
+
+}
+
+.splash:hover{
+    animation-name: image;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
+}
+
+
+
+
+@keyframes image{
+    0%{
+        right: 10px;
+        background-color: green;
+    }
+    50%{
+        
+     background-color: red;
+    }
+    100%{
+        background-color:blueviolet;
+       
+    }
+}
+ 
+
+#footer{
+    min-height: 10vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+}
+
+.nav{
+    justify-self: center;
+    margin-bottom: 10px;
+    
+}
+
+.butting button{
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: olivedrab;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .2px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.butting button:hover{
+animation-name: image;
+animation-duration: 3s;
+animation-timing-function: ease-in-out;
+color: black;
+
+}
+
+
+
+
+
+
+@media (max-width: 799px){
+
+
+    #blazer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-left: 15px;
+       
+    }
+
+
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+}
+
+
+@media (max-width:477px){
+
+
+    .navs{
+        justify-self: end;
+        
+        
+    }
+
+    .plash img{
+        width: 280px;
+        height: 300px;
+    }
+
+
+    .blaz{
+        margin-left: 10px;
+    }
+    
+
+
+    #blazer{
+        margin-left: 4px;
+    }
+  
+  #footer{
+    margin-left: 2px;
+  }
+
+    .nav{
+        display: flex;
+        margin: 8px;
+    }
+
+
+    .butting{
+        display: flex;
+        margin-left: 3px;
+    }
+
+ .pro button{
+
+    padding: 5px 6px;
+
+    }
+
+
+}
+

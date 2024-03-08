@@ -1,0 +1,208 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#header{
+    height: 10vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.navigation{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: end;
+    margin-right: 50px;
+   
+   
+}
+
+
+.navigation a{
+    text-decoration: none; 
+     margin-bottom: auto;
+}
+
+.one img{
+    margin-left: 40px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+  
+
+
+
+#main .images{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.images p{
+    text-align: center;  
+}
+
+footer .foot{
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+footer nav a{
+    text-decoration: none;
+    margin: 3px;
+}
+
+
+footer button{
+    margin: 3px;
+    padding: 9px 15px;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    letter-spacing: .2px;
+    font-weight: 700;
+
+}
+
+
+footer .button{
+    margin-top: 18px;
+    margin-bottom: 25px;
+    transition: 2s;
+   
+}
+
+
+
+footer button:hover{
+   color: black;
+   background-color: #fff;
+   border: 1px solid gray;
+}
+
+
+
+
+
+/*Ipad Mini*/
+
+@media (max-width: 799px){
+
+#main .images{
+    display: grid;
+    grid-auto-flow: columns;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+    
+
+
+.images img{
+    margin-left: 15px;
+}
+
+footer .foot{
+    min-height: 10vh;
+    display:grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+} 
+
+
+footer .button{
+    margin-top: 7px;
+    margin-bottom: 20px;
+   
+}
+
+
+
+    
+}
+
+/*End of Ipad Mini*/
+
+
+
+
+
+/*iphone SE*/
+
+@media (max-width: 477px){
+
+#header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+.images .sour{
+    width: 250px;
+    height: 300px;
+    margin-left: 3px;
+}
+
+
+
+
+footer .foot{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-left: 5px;
+   
+}
+
+
+footer .button{
+    display: flex;
+    margin-left: 2px;
+}
+
+.tony button{
+    padding: 5px 6px;
+}
+
+footer .nav{
+    display: flex;
+}
+
+
+
+
+}
+
+
+
+/*End of iphone SE*/
